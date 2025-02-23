@@ -1,351 +1,174 @@
-html {
-  scroll-behavior: smooth;
-  height: 100dvh;
-  overflow-x: hidden;
-  width: 100%;
-}
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #000;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  background-image: url("imagens/matriz.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  font-size: 17px;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  width: 100%;
-}
-.banner {
-  background-color: #000;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(49, 168, 221, 0.2),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(https://micheleambrosio.github.io/dio-trilha-css-desafio-01/assets/images/banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid #33a8db80;
-}
-
-.banner .menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  font-size: 14px;
-  background-color: #000;
-  font-weight: bolder;
-}
-
-.banner .menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.banner .menu ul li {
-  margin: 0;
-  padding: 0 35px;
-  overflow: hidden;
-}
-
-.banner .menu ul li a {
-  color: white;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-  transform-origin: center;
-  display: inline-block;
-}
-
-.banner .menu ul li a:hover {
-  transform: scale(1.3);
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #1472b7);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.banner .banner-content {
-  text-align: center;
-  width: 600px;
-  height: auto;
-}
-.banner .banner-content h1 {
-  font-size: 48px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #1472b7);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.banner .banner-content h1::before {
-  content: "< ";
-}
-
-.banner .banner-content h1::after {
-  content: " / >";
-}
-
-.banner .banner-content p {
-  font-size: 1.25rem;
-}
-.banner .banner-content button {
-  width: 320px;
-  height: 60px;
-  font-size: 17px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-  color: #31a8dd;
-  background-color: transparent;
-  border-image: linear-gradient(#3ba1cd, #1572b7);
-  border-image-slice: 10;
-}
-
-#sobre {
-  height: 530px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-bottom: 2px solid #33a8db80;
-  background-color: #000;
-}
-#sobre h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #2090e0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#sobre p {
-  width: 60%;
-}
-
-#course-content {
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-bottom: 1px solid #33a8db80;
-  background-color: #000;
-}
-#course-content h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #2090e0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 2rem;
-  font-weight: bold;
-}
-#course-content p {
-  width: 750px;
-  font-size: 16px;
-  font-family: "Raleway", sans-serif;
-}
-.modules-list .module {
-  border: 1px solid #33a8db;
-  box-shadow: inset -5px 6px 8px rgb(0 0 0 / 70%);
-  margin: 0px 135px 24px;
-  padding: 15px 50px;
-  border-radius: 30px;
-}
-.modules-list .module span {
-  color: #33a8db;
-}
-
-.modules-list .module .lista-cursos,
-.lista-idiomas {
-  text-align: left;
-}
-#transform-world {
-  display: flex;
-  align-items: center;
-  background-color: #2090e0;
-  height: 530px;
-  background-color: transparent;
-  border-bottom: 1px solid #33a8db80;
-}
-
-#transform-world p {
-  margin: 0px;
-  padding-left: 170px;
-  font-weight: 900;
-  font-size: 37px;
-  text-transform: lowercase;
-  text-shadow: 3px 2px #33a8db;
-}
-
-#portifolio {
-  display: grid;
-  grid-template-columns: 400px 400px;
-  gap: 40px;
   padding: 20px;
 }
 
-#portifolio .item-galeria {
-  overflow: hidden;
-}
-
-#portifolio .item-galeria img {
-  width: 98%;
-  height: auto;
-  transition: transform 0.3s ease;
-  border: solid #31a8dd;
-}
-
-#portifolio .item-galeria img:hover {
-  transform: scale(1.2);
-}
-
-#professional-challenges {
-  padding-bottom: 30px;
-  background-color: #000;
-  text-align: center;
-  height: 700px;
+.container {
+  background-image: url("churrasco.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-bottom: 1px solid #33a8db80;
-}
 
-#professional-challenges h2 {
-  padding-top: 85px;
-  font-size: 33px;
-  text-transform: uppercase;
-  color: #0692ce;
-  letter-spacing: 2px;
-}
-
-#Contatos {
-  max-width: 400px;
+  max-width: 800px;
+  margin: auto;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
   text-align: center;
-  margin: 0 auto;
 }
 
-#Contatos h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+h2 {
+  color: #fff;
 }
 
-#Contatos .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
-#Contatos .contact-form input,
-.contact-form textarea {
+table th,
+table td {
+  border: 1px solid #ddd;
   padding: 10px;
-  border: 1px solid #000;
-  font-size: 16px;
-  font-family: inherit;
-  outline: none;
-  cursor: pointer;
+  text-align: center;
 }
 
-#Contatos .contact-form textarea {
-  resize: none;
+table th {
+  background-color: #007bff;
+  color: #fff;
 }
 
-#Contatos .contact-form button {
+table tr {
+  background-color: #f9f9f9;
+}
+
+.form {
+  margin: 20px 0;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+select {
+  width: 100%;
   padding: 10px;
-  background-color: #000;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
   color: #fff;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.remove-btn {
+  float: right;
+  padding: 3px;
+  margin-top: -5px;
+  font-size: 10px;
+
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff0404;
+  display: block;
+  position: relative;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.remove-btn:active {
+  top: 10px;
+  background-color: #da340ad7;
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+}
+
+.button01:hover {
+  background-color: #218838;
+}
+
+#resumo {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resumo li {
+  background: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#total {
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#finalizar-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-#Contatos .contact-form button:hover {
-  background-color: #33a8db80;
-  color: #000;
+#finalizar-btn:hover {
+  background-color: #0056b3;
 }
 
-footer {
-  background-color: #000;
-  padding: 45px 0;
-  text-align: center;
-  border-top: 1px solid #33a8db80;
-}
-
-footer img {
-  padding: 0px 50px;
-}
-footer img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-@media screen and (max-width: 870px) {
-  #sobre p {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #course-content .modules-list .module {
-    margin: 0px 10px 24px;
-    padding: 15px 5px;
-  }
-
-  #portifolio {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 0px;
-  }
-
-  #portifolio .item-galeria {
-    padding: 14px;
-  }
-  #portifolio .item-galeria img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-
-  #professional-challenges {
-    height: auto;
+@media (min-width: 380px) and (max-width: 400px) {
+  #resumo li {
+    font-size: 15px;
   }
 }
 
-@media screen and (max-width: 620px) {
-  footer img {
-    padding: 0px 30px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  footer img {
-    padding: 0px 20px;
+@media (max-width: 379px) {
+  body {
+    font-size: 80%;
   }
 }
 
